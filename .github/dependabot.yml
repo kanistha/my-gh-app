@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: "daily"
     labels:
-      - "npm"
+      - "go"
       - "dependencies"
     reviewers:
       - "kanistha" 
@@ -20,4 +20,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # Raise all pull requests with reviewers
+    reviewers:
+      #- "my-org/team-name"
+      - "octocat"
+    # Raise all pull requests with an assignee
+    assignees:
+      - "kanistha"
+    labels:
+      - "Docker dependencies"
+      - "triage-board"
     
